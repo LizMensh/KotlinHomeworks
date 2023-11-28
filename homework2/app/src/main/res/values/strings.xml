@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Работа со списками и сетью</string>
+    <string name="button_text">Загрузить</string>
+    <string name="base_url">https://api.giphy.com/</string>
+</resources>
