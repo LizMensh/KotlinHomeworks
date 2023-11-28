@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class MainAdapter() :
@@ -32,11 +33,14 @@ class MainViewHolder(itemView: View) :
 
     private val name: TextView = itemView.findViewById(R.id.square)
 
-
     fun bind(item: Square) {
         name.text = item.position.toString()
         name.setBackgroundResource(item.backgroundColor)
         name.setTextColor(item.textColor)
+        itemView.setOnClickListener {
+            Toast.makeText(itemView.context, "Hello World", Toast.LENGTH_LONG).show()
+            item.backgroundColor = R.color.green
+            name.setBackgroundResource(item.backgroundColor)
+        }
     }
-
 }
