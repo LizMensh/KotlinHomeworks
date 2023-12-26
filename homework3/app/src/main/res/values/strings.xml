@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Работа со списками и сетью</string>
+    <string name="button_text">Загрузить</string>
+    <string name="base_url">https://api.giphy.com/</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
